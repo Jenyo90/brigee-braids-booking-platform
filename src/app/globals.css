@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme inline {
+  --color-gold: #C9A227;
+  --color-gold-light: #D4A853;
+  --color-gold-dark: #A6841E;
+  --color-surface: #0F0F0F;
+  --color-surface-2: #1A1A1A;
+  --color-surface-3: #262626;
+  --color-on-dark: #F5F0E8;
+  --color-on-dark-muted: #A89F94;
+  --color-border: #2E2E2E;
+
+  --color-background: var(--color-surface);
+  --color-foreground: var(--color-on-dark);
+  --color-primary: var(--color-gold);
+  --color-primary-foreground: #000000;
+  --color-muted: var(--color-surface-2);
+  --color-muted-foreground: var(--color-on-dark-muted);
+  --color-card: var(--color-surface-2);
+
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-tap-highlight-color: transparent; }
+
+body {
+  background: var(--color-surface);
+  color: var(--color-on-dark);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-serif); }
+
+.gold-gradient { background: linear-gradient(135deg, #C9A227 0%, #D4A853 50%, #A6841E 100%); }
+
+.gold-text {
+  background: linear-gradient(135deg, #C9A227, #D4A853);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--color-surface); }
+::-webkit-scrollbar-thumb { background: var(--color-gold-dark); border-radius: 3px; }

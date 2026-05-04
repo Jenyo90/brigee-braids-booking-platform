@@ -1,0 +1,63 @@
+{
+  "name": "Brigee Braids",
+  "short_name": "Brigee Braids",
+  "description": "Premium Afrocentric hair braiding — book your appointment online.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#000000",
+  "background_color": "#C9A227",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Brigee Braids booking on mobile"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Book Now",
+      "short_name": "Book",
+      "description": "Start a new booking",
+      "url": "/book",
+      "icons": [{ "src": "/icons/icon-96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "My Appointments",
+      "short_name": "Appointments",
+      "url": "/appointments"
+    }
+  ],
+  "categories": ["lifestyle", "beauty", "health"],
+  "lang": "en-AU",
+  "dir": "ltr"
+}
