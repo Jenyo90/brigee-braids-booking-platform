@@ -40,6 +40,7 @@ export function formatDate(date: string | Date): string {
 }
 
 export function formatTime(time: string): string {
+  if (!time) return "TBC";
   const [hours, minutes] = time.split(":");
   const date = new Date();
   date.setHours(parseInt(hours), parseInt(minutes));

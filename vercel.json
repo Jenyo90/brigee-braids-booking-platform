@@ -2,19 +2,8 @@
   "framework": "nextjs",
   "buildCommand": "npm run build",
   "outputDirectory": ".next",
-  "regions": ["syd1"],
-  "env": {
-    "NEXT_PUBLIC_SUPABASE_URL": "@supabase-url",
-    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "@supabase-anon-key",
-    "SUPABASE_SERVICE_ROLE_KEY": "@supabase-service-role-key",
-    "NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY": "@stripe-publishable-key",
-    "STRIPE_SECRET_KEY": "@stripe-secret-key",
-    "STRIPE_WEBHOOK_SECRET": "@stripe-webhook-secret",
-    "OPENAI_API_KEY": "@openai-api-key",
-    "TWILIO_ACCOUNT_SID": "@twilio-account-sid",
-    "TWILIO_AUTH_TOKEN": "@twilio-auth-token",
-    "TWILIO_PHONE_NUMBER": "@twilio-phone-number",
-    "SENDGRID_API_KEY": "@sendgrid-api-key",
-    "SENDGRID_FROM_EMAIL": "@sendgrid-from-email"
-  }
+  "regions": [
+    "syd1"
+  ],
+  "installCommand": "npm install"
 }

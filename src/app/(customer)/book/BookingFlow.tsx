@@ -37,6 +37,7 @@ export function BookingFlow({ styles, slots, userId }: BookingFlowProps) {
   } = useBookingStore();
 
   const [aiLoading, setAILoading] = useState(false);
+  const [appointmentLoading, setAppointmentLoading] = useState(false);
   const [aiError, setAIError] = useState<string | null>(null);
 
   const depositAmount = selectedStyle
@@ -69,7 +70,8 @@ export function BookingFlow({ styles, slots, userId }: BookingFlowProps) {
   };
 
   const handleCreateAppointment = async () => {
-    if (!selectedStyle || !selectedSlot) return;
+    if (!selectedStyle || !selectedSlot || appointmentLoading) return;
+    setAppointmentLoading(true);
     const avgPrice = (selectedStyle.price_min + selectedStyle.price_max) / 2;
 
     const res = await fetch("/api/stripe/intent", {
@@ -98,6 +100,7 @@ export function BookingFlow({ styles, slots, userId }: BookingFlowProps) {
       setAppointmentId(data.appointmentId);
       setStep("payment");
     }
+    setAppointmentLoading(false);
   };
 
   // STYLE STEP
@@ -112,7 +115,7 @@ export function BookingFlow({ styles, slots, userId }: BookingFlowProps) {
               key={s.id}
               style={s}
               selected={selectedStyle?.id === s.id}
-              onSelect={setSelectedStyle}
+              onSelect={(style) => { setSelectedStyle(style); setStep("customise"); }}
             />
           ))}
         </div>
@@ -357,7 +360,7 @@ export function BookingFlow({ styles, slots, userId }: BookingFlowProps) {
 
         <div className="mt-8 flex justify-between">
           <Button variant="outline" onClick={() => setStep("slot")}>Back</Button>
-          <Button onClick={handleCreateAppointment}>
+          <Button onClick={handleCreateAppointment} disabled={appointmentLoading}>
             Proceed to Payment
           </Button>
         </div>
