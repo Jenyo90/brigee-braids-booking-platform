@@ -1,9 +1,10 @@
 import { redirect } from "next/navigation";
 import Link from "next/link";
-import { LayoutDashboard, Calendar, Users, BookOpen, BarChart3, LogOut } from "lucide-react";
+import { LayoutDashboard, Calendar, Users, BookOpen, BarChart3 } from "lucide-react";
 import { ToastProvider } from "@/components/ui/toast";
 import { createClient } from "@/lib/supabase/server";
 import type { UserRole } from "@/types/database";
+import { SignOutButton } from "./SignOutButton";
 
 const NAV = [
   { href: "/admin/dashboard", label: "Dashboard", icon: LayoutDashboard },
@@ -49,10 +50,7 @@ export default async function AdminLayout({ children }: { children: React.ReactN
             ))}
           </nav>
           <div className="p-4 border-t border-[--color-border]">
-            <Link href="/api/auth/signout" className="flex items-center gap-3 px-2 py-2 text-xs text-[--color-on-dark-muted] hover:text-red-400 transition-colors">
-              <LogOut className="h-4 w-4" />
-              Sign Out
-            </Link>
+            <SignOutButton />
           </div>
         </aside>
 
