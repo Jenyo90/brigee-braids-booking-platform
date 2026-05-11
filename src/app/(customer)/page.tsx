@@ -19,7 +19,7 @@ export default async function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center justify-center bg-black overflow-hidden">
+      <section className="relative min-h-[90vh] flex items-center justify-center bg-[--color-surface] overflow-hidden">
         <div className="absolute inset-0 opacity-30 bg-gradient-to-br from-[--color-gold-dark] via-transparent to-transparent" />
         <div className="absolute inset-0 bg-[url('/images/hero-bg.jpg')] bg-cover bg-center opacity-20" />
         <div className="relative z-10 text-center px-4 max-w-3xl mx-auto">
@@ -126,11 +126,11 @@ export default async function HomePage() {
           </p>
           <div className="grid grid-cols-3 gap-4 max-w-xl mx-auto">
             {[
-              { tier: "Silver", visits: "5 visits", color: "text-slate-300" },
-              { tier: "Gold", visits: "10 visits", color: "text-[--color-gold]" },
-              { tier: "Diamond", visits: "20 visits", color: "text-cyan-400" },
+              { tier: "Silver", visits: "5 visits", color: "text-slate-700" },
+              { tier: "Gold", visits: "10 visits", color: "text-[--color-on-dark]" },
+              { tier: "Diamond", visits: "20 visits", color: "text-cyan-800" },
             ].map(({ tier, visits, color }) => (
-              <div key={tier} className="bg-black border border-[--color-border] p-6 text-center">
+              <div key={tier} className="bg-[--color-surface-2] border border-[--color-border] p-6 text-center">
                 <p className={`font-serif text-2xl font-semibold ${color} mb-1`}>{tier}</p>
                 <p className="text-xs text-[--color-on-dark-muted] uppercase tracking-wider">{visits}</p>
               </div>

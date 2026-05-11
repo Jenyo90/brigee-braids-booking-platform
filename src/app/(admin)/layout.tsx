@@ -29,7 +29,7 @@ export default async function AdminLayout({ children }: { children: React.ReactN
 
   return (
     <ToastProvider>
-      <div className="min-h-screen flex bg-black">
+      <div className="min-h-screen flex bg-[--color-surface]">
         {/* Sidebar */}
         <aside className="w-56 bg-[--color-surface-2] border-r border-[--color-border] flex flex-col shrink-0">
           <div className="p-6 border-b border-[--color-border]">

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function AuthLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="min-h-screen flex flex-col bg-black">
+    <div className="min-h-screen flex flex-col bg-[--color-surface]">
       <div className="p-6">
         <Link href="/" className="font-serif text-2xl gold-text">
           Brigee Braids

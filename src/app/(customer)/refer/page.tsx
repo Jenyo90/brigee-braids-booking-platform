@@ -22,7 +22,7 @@ export default async function ReferPage({ searchParams }: ReferPageProps) {
   const referrer = referrerRaw as { full_name: string | null } | null;
 
   return (
-    <div className="min-h-screen bg-black flex items-center justify-center px-4">
+    <div className="min-h-screen bg-[--color-surface] flex items-center justify-center px-4">
       <div className="max-w-md w-full text-center">
         <Badge variant="outline" className="mb-6">Referral Invite</Badge>
         <h1 className="font-serif text-4xl font-light mb-4">

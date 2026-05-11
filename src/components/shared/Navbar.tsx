@@ -32,7 +32,7 @@ export function Navbar({ user, isAdmin }: NavbarProps) {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-black/95 backdrop-blur-sm border-b border-[--color-border]">
+    <header className="sticky top-0 z-50 bg-[--color-surface]/95 backdrop-blur-sm border-b border-[--color-border]">
       <nav className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">

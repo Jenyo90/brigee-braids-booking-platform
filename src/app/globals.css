@@ -2,20 +2,20 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-gold: #C9A227;
-  --color-gold-light: #D4A853;
-  --color-gold-dark: #A6841E;
-  --color-surface: #0F0F0F;
-  --color-surface-2: #1A1A1A;
-  --color-surface-3: #262626;
-  --color-on-dark: #F5F0E8;
-  --color-on-dark-muted: #A89F94;
-  --color-border: #2E2E2E;
+  --color-gold: #000000;
+  --color-gold-light: #1A1200;
+  --color-gold-dark: #000000;
+  --color-surface: #C9A227;
+  --color-surface-2: #B8911F;
+  --color-surface-3: #A6841E;
+  --color-on-dark: #000000;
+  --color-on-dark-muted: #3D2600;
+  --color-border: #8B6914;
 
   --color-background: var(--color-surface);
   --color-foreground: var(--color-on-dark);
-  --color-primary: var(--color-gold);
-  --color-primary-foreground: #000000;
+  --color-primary: var(--color-on-dark);
+  --color-primary-foreground: var(--color-surface);
   --color-muted: var(--color-surface-2);
   --color-muted-foreground: var(--color-on-dark-muted);
   --color-card: var(--color-surface-2);
@@ -36,17 +36,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+:root { color-scheme: light; }
+
 h1, h2, h3, h4, h5, h6 { font-family: var(--font-serif); }
 
 .gold-gradient { background: linear-gradient(135deg, #C9A227 0%, #D4A853 50%, #A6841E 100%); }
 
 .gold-text {
-  background: linear-gradient(135deg, #C9A227, #D4A853);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #000000;
+  font-weight: 700;
 }
 
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--color-surface); }
-::-webkit-scrollbar-thumb { background: var(--color-gold-dark); border-radius: 3px; }
+::-webkit-scrollbar-thumb { background: #000000; border-radius: 3px; }
