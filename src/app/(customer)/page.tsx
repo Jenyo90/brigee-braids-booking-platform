@@ -56,7 +56,7 @@ export default async function HomePage() {
           {[
             { icon: Sparkles, title: "AI Style Suggestions", desc: "Upload a photo and get personalised braid recommendations." },
             { icon: Clock, title: "Flexible Scheduling", desc: "Choose morning or afternoon slots, including recurring bookings." },
-            { icon: Shield, title: "Secure Payments", desc: "Pay your 10% deposit online. Stripe-secured, EFTPOS accepted." },
+            { icon: Shield, title: "Secure Payments", desc: "Pay a flat $50 deposit online. Stripe-secured, EFTPOS accepted." },
             { icon: Star, title: "Loyalty Rewards", desc: "Earn Silver, Gold, and Diamond tier rewards with every visit." },
           ].map(({ icon: Icon, title, desc }) => (
             <div key={title} className="text-center">
@@ -148,7 +148,7 @@ export default async function HomePage() {
           Ready to <span className="gold-text font-semibold">Book?</span>
         </h2>
         <p className="text-[--color-on-dark-muted] mb-8 max-w-md mx-auto">
-          Secure your slot with a 10% deposit. Mobile service available across the Central Coast and up to 100km away.
+          Secure your slot with a $50 deposit. Mobile service available across the Central Coast and up to 100km away.
         </p>
         <Link href="/book">
           <Button size="lg">Book Your Appointment</Button>

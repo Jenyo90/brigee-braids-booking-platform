@@ -20,8 +20,8 @@ export function formatAUDFromDollars(dollars: number): string {
   }).format(dollars);
 }
 
-export function calculateDeposit(total: number, percentage = 10): number {
-  return Math.round((total * percentage) / 100 * 100) / 100;
+export function calculateDeposit(_total: number): number {
+  return 50;
 }
 
 export function generateReferralCode(): string {

@@ -27,7 +27,7 @@ export default async function BookPage() {
           Book Your <span className="gold-text font-semibold">Appointment</span>
         </h1>
         <p className="text-sm text-[--color-on-dark-muted]">
-          Complete the steps below. A 10% deposit is required to confirm your booking.
+          Complete the steps below. A $50 deposit is required to confirm your booking.
         </p>
       </div>
       <BookingFlow styles={styles ?? []} slots={slots ?? []} userId={user.id} />

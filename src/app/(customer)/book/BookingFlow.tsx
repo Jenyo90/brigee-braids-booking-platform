@@ -40,11 +40,7 @@ export function BookingFlow({ styles, slots, userId }: BookingFlowProps) {
   const [appointmentLoading, setAppointmentLoading] = useState(false);
   const [aiError, setAIError] = useState<string | null>(null);
 
-  const depositAmount = selectedStyle
-    ? calculateDeposit(
-        (selectedStyle.price_min + selectedStyle.price_max) / 2
-      )
-    : 0;
+  const depositAmount = selectedStyle ? calculateDeposit(0) : 0;
 
   const handleAISuggest = async () => {
     if (!inspirationPhotos.length) return;
@@ -349,7 +345,7 @@ export function BookingFlow({ styles, slots, userId }: BookingFlowProps) {
             <span className="text-sm">{formatAUDFromDollars(avg)}</span>
           </div>
           <div className="p-4 flex justify-between bg-[--color-surface-3]">
-            <span className="text-xs uppercase tracking-wider text-[--color-gold]">Deposit Due Now (10%)</span>
+            <span className="text-xs uppercase tracking-wider text-[--color-gold]">Deposit Due Now</span>
             <span className="text-sm font-semibold text-[--color-gold]">{formatAUDFromDollars(depositAmount)}</span>
           </div>
         </div>
