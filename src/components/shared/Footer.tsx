@@ -34,8 +34,8 @@ export function Footer() {
               <li>Gosford, NSW 2250</li>
               <li>Central Coast & Greater Sydney</li>
               <li>
-                <a href="mailto:hello@brigeebraids.com.au" className="hover:text-[--color-gold] transition-colors">
-                  hello@brigeebraids.com.au
+                <a href="mailto:stylistbree@brigeebraids.com" className="hover:text-[--color-gold] transition-colors">
+                  stylistbree@brigeebraids.com
                 </a>
               </li>
             </ul>
