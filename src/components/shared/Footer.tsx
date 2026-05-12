@@ -8,7 +8,7 @@ export function Footer() {
           <div>
             <h3 className="font-serif text-xl gold-text mb-3">Brigee Braids</h3>
             <p className="text-sm text-[--color-on-dark-muted] leading-relaxed">
-              Premium Afrocentric hair braiding in Gosford, NSW. Mobile service available across the Central Coast and greater Sydney.
+              Premium hair braiding services in Gosford and on the Central Coast, NSW. Mobile service available across the Central Coast and greater Sydney.
             </p>
           </div>
           <div>
