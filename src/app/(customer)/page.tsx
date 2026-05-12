@@ -29,7 +29,7 @@ export default async function HomePage() {
             <span className="block gold-text font-semibold">Your Story</span>
           </h1>
           <p className="text-[--color-on-dark-muted] text-lg mb-10 max-w-xl mx-auto leading-relaxed">
-            Premium Afrocentric braiding delivered to your home or at our studio. Book online in minutes — AI style suggestions included.
+            Premium braiding delivered to your home or at our studio. Book online in minutes — AI style suggestions included.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/book">

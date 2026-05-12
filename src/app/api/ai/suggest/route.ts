@@ -35,7 +35,7 @@ export async function POST(request: NextRequest) {
               },
               {
                 type: "text",
-                text: `You are an expert Afrocentric hair braiding stylist. Analyse this image and suggest 3 braiding styles from this list ONLY: Knotless Box Braids, Classic Box Braids, Faux Locs, Senegalese Twists, Ghana Cornrows, Butterfly Locs, Boho Knotless Braids, Jumbo Box Braids.
+                text: `You are an expert hair braiding stylist. Analyse this image and suggest 3 braiding styles from this list ONLY: Knotless Box Braids, Classic Box Braids, Faux Locs, Senegalese Twists, Ghana Cornrows, Butterfly Locs, Boho Knotless Braids, Jumbo Box Braids.
 
 Return ONLY valid JSON in this exact format with no markdown:
 {"suggestions":[{"style":"Style Name","reason":"Why this suits them in one sentence","confidence":0.85,"estimatedPacks":5,"estimatedHours":6},{"style":"...","reason":"...","confidence":0.75,"estimatedPacks":4,"estimatedHours":5},{"style":"...","reason":"...","confidence":0.65,"estimatedPacks":6,"estimatedHours":7}]}`,

@@ -7,8 +7,8 @@ export const metadata: Metadata = {
     template: "%s | Brigee Braids",
   },
   description:
-    "Premium Afrocentric hair braiding in Gosford & the Central Coast. Book online, upload inspiration photos, and receive AI style suggestions.",
-  keywords: ["hair braiding", "Gosford", "Central Coast", "NSW", "Afrocentric", "knotless braids", "box braids"],
+    "Premium hair braiding in Gosford & the Central Coast. Book online, upload inspiration photos, and receive AI style suggestions.",
+  keywords: ["hair braiding", "Gosford", "Central Coast", "NSW", "knotless braids", "box braids"],
   authors: [{ name: "Brigee Braids" }],
   manifest: "/manifest.json",
   appleWebApp: {
